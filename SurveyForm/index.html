@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Mario's Pizza Customer Survey</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <h1 id="title">Mario's Pizza Customer Survey</h1>
+        <p id="description">Here at Mario's pizza we value our customers feedback. We want to make sure you were satisfied with your food, your service, and your evening. Please take some time to fill out the questionnaire below so we can help server you better in the future.</p>
+    
+        <form id="survey-form">
+            <!-- Label & Input for Name -->
+            <label for="name">Name</label>
+            <input type="text" id="name-label" name="name" placeholder="Enter your name" required>
+
+            <!-- Label & Input for Email -->
+            <label for="email">Email</label>
+            <input type="email" id="email-label" name="email" placeholder="Enter your email" required>
+
+            <!-- Label & Input for # of quests -->
+            <label for="number"># of Guests</label>
+            <input type="number" id="number-label" name="number" placeholder="How many guests?" min="0" max="20" default="0" required>
+
+            <!-- Select dropdown menu -->
+            <label for="dropdown">Who was your server this evening?</label>
+            <select id="dropdown" name="dropdown">
+                <option value="mario">Mario</option>
+                <option value="luigi">Luigi</option>
+                <option value="peach">Peach</option>
+                <option value="toad">Toad</option>
+                <option value="boo">Boo</option>
+            </select>
+
+            <!-- Quality of service radio buttons -->
+            <p>Was the quality of service up to your standards?</p>
+            <label for="quality-verygood">Very Good</label>
+            <input type="radio" id="quality-verygood" name="quality" value="verygood">
+            <label for="quality-mediocre">Mediocre</label>
+            <input type="radio" id="quality-mediocre" name="quality" value="mediocre">
+            <label for="quality-poor">Poor</label>
+            <input type="radio" id="quality-poor" name="quality" value="poor">
+
+            <!-- Would you recommend checkbox -->
+            <p>Would you recommend Mario's pizza?</p>
+            <label for="recommend">Yes</label>
+            <input type="checkbox" id="recommend" name="recommend">
+            <label for="recommend">No</label>
+            <input type="checkbox" id="recommend" name="recommend">
+
+            <!-- Text area for extra comments -->
+        </form>
+    </body>
+</html>
