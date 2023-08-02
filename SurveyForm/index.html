@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Mario's Pizza Customer Survey</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
 
-    <body>
-        <h1 id="title">Mario's Pizza Customer Survey</h1>
-        <p id="description">Here at Mario's pizza we value our customers feedback. We want to make sure you were satisfied with your food, your service, and your evening. Please take some time to fill out the questionnaire below so we can help server you better in the future.</p>
-    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mario's Pizza Customer Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading-div">
+            <h1 id="title">Mario's Pizza Customer Survey</h1>
+            <p id="description">Here at Mario's pizza we value our customers feedback. We want to make sure you were
+                satisfied with your food, your service, and your evening. Please take some time to fill out the
+                questionnaire below so we can help server you better in the future.</p>
+        </div>
+
         <form id="survey-form">
             <!-- Label & Input for Name -->
-            <label for="name">Name</label>
-            <input type="text" id="name-label" name="name" placeholder="Enter your name" required>
+            <label for="name" id="name-label">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
             <!-- Label & Input for Email -->
-            <label for="email">Email</label>
-            <input type="email" id="email-label" name="email" placeholder="Enter your email" required>
+            <label for="email" id="email-label">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
             <!-- Label & Input for # of quests -->
-            <label for="number"># of Guests</label>
-            <input type="number" id="number-label" name="number" placeholder="How many guests?" min="0" max="20" default="0" required>
+            <label for="number" id="number-label">Party size?</label>
+            <input type="number" id="number" name="number" placeholder="How many guests?" min="0" max="20" default="0"
+                required>
 
             <!-- Select dropdown menu -->
             <label for="dropdown">Who was your server this evening?</label>
@@ -47,11 +54,18 @@
             <!-- Would you recommend checkbox -->
             <p>Would you recommend Mario's pizza?</p>
             <label for="recommend">Yes</label>
-            <input type="checkbox" id="recommend" name="recommend">
+            <input type="checkbox" id="recommend" name="recommend" value="yes">
             <label for="recommend">No</label>
-            <input type="checkbox" id="recommend" name="recommend">
+            <input type="checkbox" id="recommend" name="recommend" value="no">
 
             <!-- Text area for extra comments -->
+            <label for="comments">Anything else we need to know?</label>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+
+            <!-- Submit Button -->
+            <button type="submit" id="submit">Submit Feedback!</button>
         </form>
-    </body>
+    </div>
+</body>
+
 </html>
