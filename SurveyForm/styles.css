@@ -1,5 +1,5 @@
 .container {
-    max-width: 70%;
+    max-width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,4 +11,22 @@
 
 h1 {
     color: red;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    text-align: start;
+    line-height: 2rem;
+    font-weight: bolder;
+}
+
+input,
+select {
+    padding: 0.5rem;
+    border: 1px solid black;
+    border-radius: 5px;
 }
